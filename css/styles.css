@@ -799,6 +799,14 @@ pre {
   background: #fff;
   background: rgba(255, 255, 255, 0.9); }
 
+.green{
+  background: #28CB75;
+  color: #ffffff; }
+  .green ::-webkit-input-placeholder {
+    color: #28CB75; }
+  .green :-moz-placeholder {
+    color: #28CB75; }
+
 .neutral {
   background: #f0f2f5;
   color: #777B87; }
@@ -1636,16 +1644,18 @@ label {
     -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset; }
   .btn-solid.btn-accent {
-    background: #53b2e5;
-    border-color: #53b2e5;
+    /*background: #53b2e5;
+    border-color: #53b2e5;*/
     color: #fff; }
     .btn-solid.btn-accent:hover, .btn-solid.btn-accent:focus {
-      background: #69bce8;
-      border-color: #69bce8; }
+      background: #fff;
+      /*border-color: #69bce8;*/
+      color:#0CB863; }
     .btn-solid.btn-accent:active {
-      background: #53b2e5;
-      border-color: #3da8e2;
-      border-bottom-color: #53b2e5; }
+      background: #fff;
+      /*border-color: #3da8e2;
+      border-bottom-color: #53b2e5;*/
+      color: #0CB863; }
     .skeuo .btn-solid.btn-accent {
       background-color: #53b2e5;
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#53b2e5), to(#34a4e0));
@@ -2086,12 +2096,11 @@ hr.chiseled {
     .logo.text {
       margin: 40px 0; } }
 .logo.image {
-  text-indent: -9999px;
-  background-repeat: no-repeat;
-  background: url("https://static.commando.io/img/commando-logo-notag.png");
-  width: 207px;
-  height: 31px;
-  background-size: 207px 31px; }
+  /*text-indent: -9999px;*/
+  /*background-repeat: no-repeat;*/
+ /* background: url("../images/logo.png") no-repeat;
+  width: 75px;
+  height: 50px;*/ }
 
 .neutral .logo.text {
   color: #94a2b8; }
@@ -2164,7 +2173,7 @@ hr.chiseled {
         display: block;
         clear: none;
         float: right;
-        margin-top: 8px; }
+        margin-top: 20px; }
         .simple-header nav a, .simple-header nav a:visited {
           float: left;
           margin: 0 0 0 30px;
