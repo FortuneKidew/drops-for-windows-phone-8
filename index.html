@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="phlat transitions no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="phlat transitions no-js"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Drops - A Digital Ocean Client for Windows Phone</title>
+  <meta name="description" content="A Digital Ocean Client for Windows Phone.">
+  <meta name="keywords" content="digital ocean, droplets, server, windows phone, server management, configuration management" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@commando_io">
+  <meta name="twitter:creator" content="@commando_io">
+  <meta name="twitter:description" content="A distributed web based SSH platform for managing servers.">
+  <meta name="twitter:title" content="Commando.io - Manage servers easily online.">
+  <meta name="twitter:image:src" content="images/index.png">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+  <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+  <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+  <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+
+  <!--[if lt IE 9]>
+  <script type="text/javascript" crossorigin="anonymous" src="js/html5.3.7.2.js"></script>
+  <![endif]-->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/styles.css?v=6">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <script type="text/javascript" crossorigin="anonymous" src="js/modernizr.2.8.3.min.js"></script>
+
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57515458-2', 'auto');
+    ga('require', 'linkid', 'linkid.js');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body lang="en">
+  <!--[if lt IE 8]><p class="chromeframe">Your web browser is out of date. Please <a href="http://browsehappy.com">upgrade to a modern web browser</a>.</p><![endif]-->
+
+  <!-- vimeo overview video -->
+  <div class="modal-container">
+    <div id="overview-video-container" class="modal">
+      <a class="close cursor-pointer">×</a>
+      <div class="overview-video-content"></div>
+    </div> <!-- close vimeo overview video -->
+  </div> <!-- close modal-container -->
+
+  <!-- header -->
+  <header class="white simple-header">
+    <div class="con">
+
+      <a href="index.html" class="logo image"></a>
+
+      <i aria-hidden="true" data-icon="&#xe086;" class="menu-trigger btn-hollow btn-subdue" id="menu-trigger"></i>
+
+      <nav>
+        <a href="index.html#benefits-section">WHY USE IT</a>
+        <!-- <a href="/index.html#overview-video-section">OVERVIEW VIDEO</a> -->
+        <a href="index.html#howitworks-section">HOW IT WORKS</a>
+
+        <a class="divider">&nbsp;</a>
+
+        <a class="log-in btn-solid btn-base" href="https://www.windowsphone.com/en-us/store/app/drops/9d2697a2-d65c-4a09-ac31-e75214f78781">DOWNLOAD</a>
+        <!-- <a class="pricing sign-up btn-solid btn-accent" href="">SIGN UP</a> -->
+      </nav>
+
+    </div> <!-- close container -->
+  </header> <!-- close header -->
+
+  <!-- hero -->
+  <section class="base center p-top hero-centered">
+    <div class="con">
+
+      <header style="margin:20px 0px">
+        <hgroup>
+          <!-- <h1 class="h-monster h-thin highlight">Manage <span class="typed"></span>easily online.</h1> -->
+          <h3> Drops is a <strong>Windows Phone</strong> control panel for your droplets, snapshots, images and domains on <strong>DigitalOcean™</strong>. </h3>
+        </hgroup>
+      </header>
+
+      <div class="clearfix">
+        <a href="https://www.windowsphone.com/en-us/store/app/drops/9d2697a2-d65c-4a09-ac31-e75214f78781" class="btn-huge btn-solid btn-accent cursor-pointer">DOWNLOAD 
+        <i class="fa fa-arrow-right"></i></a>
+      </div>
+
+      <a id="digitalocean-servers" href="index.html#overview-video-section">
+        <img src="images/index.png" class="medium-w-80 p-top" alt="Drops login page" />
+      </a>
+
+    </div> <!-- close container -->
+  </section> <!-- close hero -->
+
+  <!-- what's new -->
+  <!-- <section class="neutral center" id="whats-new-section"> -->
+    <!-- <div class="con">
+        <ul class="slider">
+            <li>New feature.<a href="#" target="_blank">LEARN MORE <i class="fa fa-caret-right"></i></a></li>
+        </ul>
+    </div> --> <!-- close container -->
+  <!-- </section> --> <!-- close what's new -->
+
+  <!-- benefits -->
+ <!--  <section id="benefits-section" class="white p-top p-bottom center">
+    <div class="con">
+      <header>
+        <h1 class="h-underline m-bottom">WHY USE DROPS</h1>
+        <h2 class="h-big h-thin highlight m-bottom">Eliminate complexity, barriers, and save engineering hours.</h2>
+      </header>
+
+      <div class="grid small-3 clearfix m-bottom">
+        <div class="cell">
+          <i class="icon-large highlight m-bottom" aria-hidden="true" data-icon="&#xe032;"></i>
+          <p><strong class="highlight">Get setup quickly</strong></p>
+          <p>No agents or external dependencies. Just <strong>native SSH</strong>. More efficient, more secure, and less work.</p>
+        </div>
+
+        <div class="cell">
+          <i class="icon-large highlight m-bottom" aria-hidden="true" data-icon="&#xe053;"></i>
+          <p><strong class="highlight">Increase productivity</strong></p>
+          <p>Empower everybody to run distributed commands on servers via our web based SSH interface.</p>
+        </div>
+
+        <div class="cell">
+          <i class="icon-large highlight m-bottom" aria-hidden="true" data-icon="&#xe017;"></i>
+          <p><strong class="highlight">Infrastructure transparency</strong></p>
+          <p>A full activity and audit trail. Know who executed what, when, where, and why.</p>
+        </div>
+      </div> --> <!-- close grid -->
+    <!-- </div> --> <!-- close container -->
+  <!-- </section> --> <!-- close benefits -->
+
+  <!-- overview video -->
+  <section id="overview-video-section" class="accent p-top hero-twin">
+    <div class="con">
+
+      <div class="row">
+        <div class="small-w-25">
+          <h1 class="h-thin highlight">The Dashboard</h1>
+          <p class="h-small h-thin">Monitor, shutdown/restart your droplets.</p>
+
+          <!-- <a class="btn-big btn-solid btn-base link-overview-video cursor-pointer"><i data-icon="&#9654;"></i> WATCH THE OVERVIEW VIDEO</a> -->
+        </div>
+
+        <div class="small-w-35 clearfix">
+          <a class="link-overview-video cursor-pointer">
+            <img src="images/dashboard.png" alt="Drops Dashboard" />
+            <!-- <i class="fa fa-play-circle icon-play-overview-video"></i> -->
+          </a>
+        </div>
+
+        <div class="small-w-35 clearfix">
+          <a class="link-overview-video cursor-pointer">
+            <img src="images/DropletActions.png" alt="Drops Dashboard - Actions" />
+            <!-- <i class="fa fa-play-circle icon-play-overview-video"></i> -->
+          </a>
+        </div>
+      </div> <!-- close row -->
+
+    </div> <!-- close container -->
+  </section> <!-- overview video -->
+
+  <!-- how it works -->
+  <section id="howitworks-section" class="neutral center p-top p-bottom">
+    <div class="con">
+      <header>
+        <hgroup>
+          <h1 class="h-underline m-bottom">USING DROPS</h1>
+        </hgroup>
+      </header>
+
+      <div class="grid small-2 medium-3">
+        <div class="clearfix">
+          <div class="cell">
+            <i class="fa fa-hdd-o icon-large highlight m-bottom" aria-hidden="true"></i>
+            <p><strong class="highlight">Droplets</strong></p>
+            <p>View, manage droplets/servers. You can manage all your droplets from the dashboard from restarting to deleting droplets!.</p>
+          </div>
+
+          <div class="cell">
+            <i class="fa fa-th-large icon-large highlight m-bottom" aria-hidden="true"></i>
+            <p><strong class="highlight">Drill down</strong></p>
+            <p>View your droplet details, such as hardware, OS, network information, ssh keys, backups, snapshots...</p>
+          </div>
+
+        </div>
+
+        <div class="clearfix">
+        <!-- <div class="cell">
+            <i class="fa fa-book icon-large highlight m-bottom" aria-hidden="true"></i>
+            <p><strong class="highlight">Recipes</strong></p>
+            <p>Recipes are containers of commands that are fully versioned. Recipes can be written in <span class="blue">shell</span>, <span class="blue">bash</span>, <span class="blue">perl</span>, <span class="blue">python</span>, <span class="blue">ruby</span>, <span class="blue">go</span>, or <span class="blue">node.js</span>.</p>
+          </div> -->
+        </div>
+      </div> <!-- close grid -->
+    </div> <!-- close container -->
+  </section> <!-- close how it works -->
+
+  <!-- provider integrations -->
+  <section id="provider-integrations-section" class="neutral p-top p-bottom center">
+    <div class="con">
+        <header>
+            <h1 class="h-underline m-bottom">BUILT FOR DIGITAL OCEAN</h1>
+            <h2 class="h-big h-thin m-bottom" style="max-width: none;">Manage droplets from <a href="https://digitalocean.com" class="cursor-pointer">Digital Ocean</a>.</h2><!-- link-do-video -->
+        </header>
+        <div class="grid small-4 clearfix providers">
+            <div class="cell center">
+                <a class="cursor-pointer"> <!-- link-do-video -->
+                    <img src="images/digitalocean.png" class="provider-logo" alt="DigitalOcean" />
+                </a>
+                <p>DigitalOcean</p>
+                <!-- <a class="link-do-video cursor-pointer">
+                    <i>Watch a video about the integration</i>
+                </a> -->
+            </div>
+        </div>
+    </div> <!-- close container -->
+  </section> <!-- close provider integrations -->
+
+  <!-- tools -->
+  <!-- <section id="tools-section" class="white p-bottom center">
+    <div class="con">
+        <header>
+            <h1 class="h-underline m-bottom">WE HAVE THE TOOLS</h1>
+            <h2 class="h-big h-thin m-bottom" style="max-width: none;">Use our intuitive web interface, GitHub integration, and powerful API and CLI.</h2>
+        </header>
+        <div class="grid small-4 clearfix m-bottom">
+            <div class="cell">
+                <h2>
+                    <i class="fa fa-html5"></i> Web Interface
+                </h2>
+            </div>
+            <div class="cell">
+                <h2>
+                    <a href="http://blog.commando.io/run-executions-via-github-push/">
+                        <i class="fa fa-github"></i> GitHub
+                    </a>
+                </h2>
+            </div>
+            <div class="cell">
+                <h2>
+                    <a href="http://docs.commando.io">
+                        <i class="fa fa-code"></i> API
+                    </a>
+                </h2>
+            </div>
+            <div class="cell">
+                <h2>
+                    <a href="http://cli.commando.io/">
+                        <i class="fa fa-terminal"></i> CLI
+                    </a>
+                </h2>
+            </div>
+        </div>
+    </div> --> <!-- close container -->
+   <!-- </section> --> <!-- close tools -->
+
+  <!-- github service integration -->
+  <!-- <section id="github-service-integration-section" class="neutral p-top p-bottom center">
+    <div class="con">
+      <h3 class="h-huge h-thin highlight"><i class="fa fa-github"></i> DEPLOYMENTS SIMPLIFIED!</h3>
+      <h4 class="h-small h-thin m-bottom">Run commands on servers automatically when you push to GitHub.</h4>
+      <a href="http://blog.commando.io/run-executions-via-github-push" class="btn-big btn-solid btn-base">LEARN MORE ABOUT DEPLOYMENTS</a>
+    </div> --> <!-- close container -->
+  <!-- </section> --> <!-- close github service integration -->
+
+  <!-- testimonials -->
+ <!--  <section class="base p-top p-bottom testimonials-bubble">
+    <div class="con">
+      <header class="center">
+        <i aria-hidden="true" data-icon="&#xe01a;" class="icon-small"></i>
+
+        <hgroup>
+          <h1 class="h-underline m-bottom">USED AND TRUSTED BY</h1>
+          <h2 class="h-huge h-thin highlight m-bottom">You're in great company.</h2>
+        </hgroup>
+      </header>
+
+      <div class="grid small-2"> -->
+        <!-- first testimonial -->
+       <!--  <div class="cell">
+          <blockquote>
+            <p class="fill rounded">&quot;Commando.io has been a godsend for managing parts of our server fleet. We save hours of time each week with Commando.io.&quot;<i class="arrow-down"></i></p>
+
+            <footer>
+              <img src="https://static.commando.io/img/serps-square-logo.png" class="img-polaroid" alt="SERPs" />
+              <div class="fl">
+                <small class="small"><strong class="highlight">Scott Krager</strong>, Founder of <a href="https://serps.com" target="_blank">SERPs</a>.</small>
+              </div>
+            </footer>
+          </blockquote>
+        </div> --> <!-- close first testimonial -->
+
+        <!-- second testimonial -->
+       <!--  <div class="cell">
+          <blockquote>
+            <p class="fill rounded">&quot;Commando.io allows us to easily and efficiently provide service to millions of users world wide without having to worry about the nitty gritty!&quot;<i class="arrow-down"></i></p>
+
+            <footer>
+              <img src="https://static.commando.io/img/popcorn-time.png" class="img-polaroid" alt="Popcorn Time" />
+              <div class="fl">
+                <small class="small"><strong class="highlight">Xeon Core</strong>, <a href="https://popcorntime.io" target="_blank">Popcorn Time</a>.</small>
+              </div>
+            </footer>
+          </blockquote>
+        </div> --> <!-- close second testimonial -->
+
+      <!-- </div> --> <!-- close grid -->
+    <!-- </div> --> <!-- close container -->
+  <!-- </section> --> <!-- close testimonials -->
+
+  <!-- security -->
+ <!--  <section class="accent p-top p-bottom center" id="security-section">
+    <div class="con">
+      <h3 class="h-huge h-thin highlight">We are serious about security.</h3>
+      <h4 class="h-small h-thin m-bottom">Learn more about our security features and practices.</h4>
+      <a href="https://commando.io/security.html" class="btn-big btn-solid btn-base">SECURITY PAGE</a>
+    </div> --><!-- close container -->
+  <!-- </section> --><!-- close security -->
+
+  <!-- footer -->
+  <footer class="white p-top p-bottom simple-footer">
+    <div class="con">
+        <small class="legal small">
+            Made with <span class="heart"><i class="fa fa-heart"></i></span> in Nairobi<br />
+            &copy; 2015 Brian Mwadime.<br />
+            All rights reserved.
+        </small>
+
+        <nav>
+            <ul>
+                <li><a href="https://brianmwadime.com/about.html">About</a></li>
+                <li><a href="http://brianmwadime.com/blog">Blog</a></li>
+                <li><a href="https://twitter.com/drops_windowsphone">Twitter</a></li>
+                <li><a href="mailto:info@brianmwadime.com">Contact</a></li>
+            </ul>
+        </nav>
+    </div> <!-- close container -->
+  </footer> <!-- close footer -->
+
+  <script type="text/javascript" crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" crossorigin="anonymous" src="js/vendor.min.js"></script>
+  <script type="text/javascript" crossorigin="anonymous" src="js/main.js?v=33"></script>
+
+</body>
+</html>
